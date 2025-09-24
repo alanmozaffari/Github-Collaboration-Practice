@@ -1,0 +1,293 @@
+Ishika’s terminal: 
+Last login: Tue Sep 23 14:17:41 on ttys000
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) Ishikas-MacBook-Pro:~ ishikasachdeva$ conda activate CSS
+(CSS) Ishikas-MacBook-Pro:~ ishikasachdeva$ cd/Users/ishikasachdeva/Desktop/CSS
+-bash: cd/Users/ishikasachdeva/Desktop/CSS: No such file or directory
+(CSS) Ishikas-MacBook-Pro:~ ishikasachdeva$ ls
+__ long output I manually removed—
+(CSS) Ishikas-MacBook-Pro:~ ishikasachdeva$ cd /Users/ishikasachdeva/Desktop/CSS
+(CSS) Ishikas-MacBook-Pro:CSS ishikasachdeva$ ls
+Computational-Social-Science-Projects.	Terminal outputs
+(CSS) Ishikas-MacBook-Pro:CSS ishikasachdeva$ git clone https://github.com/alanmozaffari/Github-Collaboration-Practice.git
+Cloning into 'Github-Collaboration-Practice'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+(CSS) Ishikas-MacBook-Pro:CSS ishikasachdeva$ ls
+Computational-Social-Science-Projects.	Terminal outputs
+Github-Collaboration-Practice
+(CSS) Ishikas-MacBook-Pro:CSS ishikasachdeva$ cd Github-Collaboration-Practice
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ ls
+README.md			group_project_text_file.txt
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git checkout -b new_branch
+Switched to a new branch 'new_branch'
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git branch
+  main
+* new_branch
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git pull
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 1), reused 3 (delta 1), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 1.23 KiB | 315.00 KiB/s, done.
+From https://github.com/alanmozaffari/Github-Collaboration-Practice
+   c990051..242b0fa  main       -> origin/main
+ * [new branch]      new_branch -> origin/new_branch
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+    git pull <remote> <branch>
+If you wish to set tracking information for this branch you can do so with:
+    git branch --set-upstream-to=origin/<branch> new_branch
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git fetch origin
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git checkout new_branch
+Already on 'new_branch'
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git merge main
+Already up to date.
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git branch
+  main
+* new_branch
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git merge main
+Already up to date.
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ pwd
+/Users/ishikasachdeva/Desktop/CSS/Github-Collaboration-Practice
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git fetch origin/main
+fatal: 'origin/main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+Please make sure you have the correct access rights
+and the repository exists.
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git fetch origin
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git branch
+  main
+* new_branch
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git merge main
+Already up to date.
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git pull origin main
+From https://github.com/alanmozaffari/Github-Collaboration-Practice
+ * branch            main       -> FETCH_HEAD
+Updating c990051..242b0fa
+Fast-forward
+ group_project_text_file.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ nano group_project_text_file.txt
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git add group_project_text_file.txt
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git commit -m "Ishika added research interests and programs"
+[new_branch 4ed9e53] Ishika added research interests and programs
+ 1 file changed, 3 insertions(+)
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git push
+fatal: The current branch new_branch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+    git push --set-upstream origin new_branch
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git push --set-upstream origin new_branch
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 430 bytes | 430.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/alanmozaffari/Github-Collaboration-Practice.git
+   867ced5..4ed9e53  new_branch -> new_branch
+branch 'new_branch' set up to track 'origin/new_branch'.
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ git status
+On branch new_branch
+Your branch is up to date with 'origin/new_branch'.
+nothing to commit, working tree clean
+(CSS) Ishikas-MacBook-Pro:Github-Collaboration-Practice ishikasachdeva$ 
+
+
+
+Yidan’s terminal:
+Last login: Tue Sep 23 16:25:17 on ttys000
+(base) taryn@wifi-10-40-229-117 ~ % pwd
+/Users/taryn
+(base) taryn@wifi-10-40-229-117 ~ % cd github-collaboration-practice
+(base) taryn@wifi-10-40-229-117 github-collaboration-practice % pwd
+/Users/taryn/github-collaboration-practice
+(base) taryn@wifi-10-40-229-117 github-collaboration-practice % nano group_project_text_file.txt
+(base) taryn@wifi-10-40-229-117 github-collaboration-practice % git add group_project_text_file.txt
+(base) taryn@wifi-10-40-229-117 github-collaboration-practice % git commit -m "adding yidan text file"
+(base) taryn@wifi-10-40-229-117 github-collaboration-practice % git push 
+Everything up-to-date
+(base) taryn@wifi-10-40-229-117 github-collaboration-practice % git switch yidan-branch
+D	group_project_text_file.txt.save
+Already on 'yidan-branch'
+Your branch is up to date with 'origin/yidan-branch'.
+(base) taryn@wifi-10-40-229-117 github-collaboration-practice % git branch
+  main
+* yidan-branch
+(base) taryn@wifi-10-40-229-117 github-collaboration-practice % pwd
+/Users/taryn/github-collaboration-practice
+(base) taryn@wifi-10-40-229-117 github-collaboration-practice % git add group_project_text_file.txt
+(base) taryn@wifi-10-40-229-117 github-collaboration-practice % git commit -m "yidan additions"
+On branch main
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+nothing to commit, working tree clean
+(base) taryn@wifi-10-40-229-117 github-collaboration-practice % 
+
+
+Evelyn Terminal:
+Last login: Tue Sep 23 16:38:27 on ttys000
+(base) evelynortiz@Evelyns-MacBook-Pro ~ % cd "downloads" 
+(base) evelynortiz@Evelyns-MacBook-Pro downloads % cd "Computational-Social-Science-Projects"
+(base) evelynortiz@Evelyns-MacBook-Pro Computational-Social-Science-Projects % /Users/evelynortiz/Downloads/Computational-Social-Science-Projects/Github-Collaboration-Practice
+zsh: permission denied: /Users/evelynortiz/Downloads/Computational-Social-Science-Projects/Github-Collaboration-Practice
+(base) evelynortiz@Evelyns-MacBook-Pro Computational-Social-Science-Projects % pwd
+/Users/evelynortiz/downloads/Computational-Social-Science-Projects
+(base) evelynortiz@Evelyns-MacBook-Pro Computational-Social-Science-Projects % cd /Users/evelynortiz/Downloads/Computational-Social-Science-Projects/Github-Collaboration-Practice
+(base) evelynortiz@Evelyns-MacBook-Pro Github-Collaboration-Practice % git checkout -b new_branch
+Switched to a new branch 'new_branch'
+(base) evelynortiz@Evelyns-MacBook-Pro Github-Collaboration-Practice % git checkout -b evbranch 
+Switched to a new branch 'evbranch'
+(base) evelynortiz@Evelyns-MacBook-Pro Github-Collaboration-Practice % nano group_project_text_file.txt
+(base) evelynortiz@Evelyns-MacBook-Pro Github-Collaboration-Practice % git add*
+zsh: no matches found: add*
+(base) evelynortiz@Evelyns-MacBook-Pro Github-Collaboration-Practice % git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+(base) evelynortiz@Evelyns-MacBook-Pro Github-Collaboration-Practice % git add "Github-Collaboration-Practice"
+fatal: pathspec 'Github-Collaboration-Practice' did not match any files
+(base) evelynortiz@Evelyns-MacBook-Pro Github-Collaboration-Practice % git add "group_project_text_file.txt"
+(base) evelynortiz@Evelyns-MacBook-Pro Github-Collaboration-Practice % git commit -m "EOS Degree and Interests"
+[evbranch 662edf8] EOS Degree and Interests
+ 1 file changed, 2 insertions(+)
+(base) evelynortiz@Evelyns-MacBook-Pro Github-Collaboration-Practice % git push
+fatal: The current branch evbranch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+    git push --set-upstream origin evbranch
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+(base) evelynortiz@Evelyns-MacBook-Pro Github-Collaboration-Practice % git push --set-upstream origin evbranch
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (13/13), 3.33 KiB | 3.33 MiB/s, done.
+Total 13 (delta 3), reused 5 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+remote: 
+remote: Create a pull request for 'evbranch' on GitHub by visiting:
+remote:      https://github.com/alanmozaffari/Github-Collaboration-Practice/pull/new/evbranch
+remote: 
+To https://github.com/alanmozaffari/Github-Collaboration-Practice.git
+ * [new branch]      evbranch -> evbranch
+branch 'evbranch' set up to track 'origin/evbranch'.
+(base) evelynortiz@Evelyns-MacBook-Pro Github-Collaboration-Practice % 
+
+
+
+
+
+Alans terminal
+ 
+Last login: Tue Sep 23 16:10:57 on ttys001
+(base) alanfarsiomozaffari@wifi-10-40-109-133 ~ % git clone https://github.com/alanmozaffari/Github-Collaboration-Practice.git
+Cloning into 'Github-Collaboration-Practice'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+(base) alanfarsiomozaffari@wifi-10-40-109-133 ~ % git checkout-b new_branch
+git: 'checkout-b' is not a git command. See 'git --help'.
+(base) alanfarsiomozaffari@wifi-10-40-109-133 ~ % git checkout -b new_branch
+fatal: not a git repository (or any of the parent directories): .git
+(base) alanfarsiomozaffari@wifi-10-40-109-133 ~ % pwd
+/Users/alanfarsiomozaffari
+(base) alanfarsiomozaffari@wifi-10-40-109-133 ~ % cd "Github-Collaboration-Practice"
+(base) alanfarsiomozaffari@wifi-10-40-109-133 Github-Collaboration-Practice % pwd
+/Users/alanfarsiomozaffari/Github-Collaboration-Practice
+(base) alanfarsiomozaffari@wifi-10-40-109-133 Github-Collaboration-Practice % git checkout -b new_branch
+Switched to a new branch 'new_branch'
+(base) alanfarsiomozaffari@wifi-10-40-109-133 Github-Collaboration-Practice % nano group_project_text_file.txt
+(base) alanfarsiomozaffari@wifi-10-40-109-133 Github-Collaboration-Practice % git add *
+(base) alanfarsiomozaffari@wifi-10-40-109-133 Github-Collaboration-Practice % git push -m "Alan added 4c title and info"
+error: unknown switch `m'
+usage: git push [<options>] [<repository> [<refspec>...]]
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --force-if-includes   require remote updates to be integrated locally
+    --recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+(base) alanfarsiomozaffari@wifi-10-40-109-133 Github-Collaboration-Practice % git commit -m "Alan added 4c title and info"
+[new_branch 867ced5] Alan added 4c title and info
+ 1 file changed, 2 insertions(+)
+(base) alanfarsiomozaffari@wifi-10-40-109-133 Github-Collaboration-Practice % git push
+fatal: The current branch new_branch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+    git push --set-upstream origin new_branch
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+(base) alanfarsiomozaffari@wifi-10-40-109-133 Github-Collaboration-Practice % git push --set-upstream origin new_branch
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 368 bytes | 368.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'new_branch' on GitHub by visiting:
+remote:      https://github.com/alanmozaffari/Github-Collaboration-Practice/pull/new/new_branch
+remote: 
+To https://github.com/alanmozaffari/Github-Collaboration-Practice.git
+ * [new branch]      new_branch -> new_branch
+branch 'new_branch' set up to track 'origin/new_branch'.
+(base) alanfarsiomozaffari@wifi-10-40-109-133 Github-Collaboration-Practice % git branch
+  main
+* new_branch
+(base) alanfarsiomozaffari@wifi-10-40-109-133 Github-Collaboration-Practice % git status
+On branch new_branch
+Your branch is up to date with 'origin/new_branch'.
+nothing to commit, working tree clean
+(base) alanfarsiomozaffari@wifi-10-40-109-133 Github-Collaboration-Practice % 
+
+
+
